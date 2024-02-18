@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font/fonts/remixicon.css">
+    <style>
+        .accordion:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 10px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+        }
+
+        .accordion {
+            background-color: #FFF;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.4s;
+            /* z-index: 1; */
+            margin-top: 1em;
+            box-shadow: 0 5px 5px 1px rgba(83, 83, 83, .3);
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 20px 18px 20px 18px;
+            display: grid;
+            grid-template-areas: inherit;
+            grid-template-columns: auto auto auto auto;
+            /* display: none; */
+            background-color: white;
+            overflow: hidden;
+            margin-bottom: .5em;
+            /* position: fixed; */
+        }
+
+
+        @media only screen and (max-width: 760px) {
+            .panel {
+                grid-template-columns: auto auto;
+
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            .panel {
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class=""><i class="ri-notification-line ri-sm"></i></a></li>
+                <li><a href="#" class=""><i class="ri-user-line ri-sm"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pages">
+        <h1>TOOLS</h1>
+
+        <button class="accordion">ARTIKEL</button>
+        <div class="panel">
+            <div class="items">
+
+
+                <a href="./artikel_form.html" class="item">
+                    <span class="item-icon"><i class="ri-file-add-line ri-lg"></i></span><span class="item-text">Tambah
+                        Artikel</span>
+                </a>
+            </div>
+
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-article-line ri-lg"></i></span><span class="item-text">List
+                        Artikel</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-file-settings-line ri-lg"></i></span><span
+                        class="item-text">Pengaturan Artikel</span>
+                </a>
+            </div>
+        </div>
+        <button class="accordion">KEPANITIAAN</button>
+        <div class="panel">
+            <div class="items">
+
+
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-file-add-line ri-lg"></i></span>
+                    <span class="item-text">Struktur Panitia</span>
+                </a>
+            </div>
+
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-article-line ri-lg"></i></span>
+                    <span class="item-text">MEDIA</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-file-settings-line ri-lg"></i></span>
+                    <span class="item-text">Program Kerja</span>
+                </a>
+            </div>
+        </div>
+        <button class="accordion">KEANGGOTAN</button>
+        <div class="panel">
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-group-line ri-lg"></i></span><span class="item-text">List
+                        Angkatan</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-team-line ri-lg"></i></span><span class="item-text">Tambah
+                        Angkatan</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-group-2-line ri-lg"></i></span><span
+                        class="item-text">Pengaturan Angkatan</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-user-add-line ri-lg"></i></span><span class="item-text">Tambah
+                        Anggota</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-user-3-line ri-lg"></i></span><span class="item-text">List
+                        Anggota</span>
+                </a>
+            </div>
+
+        </div>
+        <button class="accordion">PREFERENSI</button>
+        <div class="panel">
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-lock-password-line ri-lg"></i></span>
+                    <span class="item-text">Password & Security</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-admin-line ri-lg"></i></span>
+                    <span class="item-text">Informasi Kontak</span>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#" class="item">
+                    <span class="item-icon"><i class="ri-user-settings-line ri-lg"></i></span>
+                    <span class="item-text">User Manager</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        // panel.style.display = "block";
+        // this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+            // var panel = this.nextElementSibling;
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "none") {
+                    panel.style.display = "flex";
+                    // console.log(panel.style.display);
+                } else {
+                    panel.style.display = "none";
+                }
+                // console.log(panel.style.display);
+            });
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
