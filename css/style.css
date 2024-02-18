@@ -151,7 +151,7 @@ header nav ul li {
     /* font-weight: inherit; */
 }
 
-.item .item-text{
+.item .item-text {
     font-weight: 100;
     margin-left: 4px;
 }
@@ -162,3 +162,75 @@ header nav ul li {
 }
 
 
+.form-group {
+    margin-top: 30px;
+    padding: 40px 20px 40px 20px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-group .form-item {
+    padding-bottom: 30px;
+}
+
+.form-title {
+    float: right;
+    color: #8325b9;
+    white-space: nowrap;
+    font-size: .75em;
+}
+
+.form-item label {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+}
+
+.form-item label span {
+    color: #999;
+    font-weight: normal;
+    font-size: .75em;
+
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #f05;
+    margin: 5px;
+}
+
+.form-item .form-btn {
+    float: right;
+    padding: 13px 18px 13px 18px;
+    border-radius: 9px;
+    border: 1px solid #f05;
+    
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.form-item a {
+    float: right;
+    padding: 13px 18px 13px 18px;
+    border-radius: 9px;
+    border: 1px solid #f05;
+    font-size: .75em;
+    /* font-weight: 500; */
+    color: white;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: #8325b9;
+}
