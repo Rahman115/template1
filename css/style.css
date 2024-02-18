@@ -208,7 +208,7 @@ header nav ul li {
     padding: 13px 18px 13px 18px;
     border-radius: 9px;
     border: 1px solid #f05;
-    
+    cursor: pointer;
     font-weight: 700;
     color: white;
     margin-bottom: 40px;
