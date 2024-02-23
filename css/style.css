@@ -279,3 +279,32 @@ th {
 }
 
 /* End Table style */
+/* Struktur style */
+.struk-group {
+    /* background: #999; */
+    padding: 15px;
+}
+
+.struk-group .struk-head{
+    font-weight: bold;
+    /* padding-bottom: 10px; */
+    font-size: 1.25em;
+}
+
+.struk-group li {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.struk-group .struk-title{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.struk-group .struk-subtitle{
+    /* font-weight: 700; */
+    font-style: italic;
+    font-size: .85em;
+
+}
+/* End Struktur style */
