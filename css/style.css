@@ -1,3 +1,12 @@
+/* 
+
+Created by Abuduchoy.my.id
+copyright @2024
+https://github.com/Rahman115
+
+
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -161,6 +170,19 @@ header nav ul li {
     font-weight: 500;
 }
 
+.button{
+    float: right;
+    padding: 13px 18px 13px 18px;
+    border-radius: 9px;
+    border: 1px solid #f05;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(241, 7, 7);
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
+
 
 .form-group {
     margin-top: 30px;
@@ -234,3 +256,26 @@ header nav ul li {
 .blue {
     background: #8325b9;
 }
+
+/* Table style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* End Table style */
